@@ -1,0 +1,13 @@
+.board{
+    background: rgb(212, 212, 212);    
+}
+.keys{
+    background: rgb(49, 49, 49);
+    color: white;
+    box-shadow: 1px 1px 2px black;
+    text-shadow: 0 0 3px white; 
+}
+.lightup{
+    box-shadow: 0 0 5px white inset;
+    text-shadow: 0 0 4px white;
+}

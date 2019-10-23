@@ -1,0 +1,25 @@
+.board{
+    background: saddlebrown;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: 16px;
+    padding: .5em;
+    border-radius: .5em;
+    /* display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; */
+    width: 48em;
+}
+.keys{
+    padding: .5em 1em;
+    border-radius: .5em;
+    float: left;
+    margin: .2em .2em;
+}
+.keys:last-child{
+    margin-right: auto;
+}
+.newline{
+    clear: left;
+}

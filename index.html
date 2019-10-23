@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="default.css">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <input type="text" id="input1"><br>
+    <input type="text" id="input2"><br>
+    <textarea name="" id="input3" cols="30" rows="10"></textarea>
+    <div class="showArea"></div>
+</body>
+<script type="module">
+    import { inputKey, createKeyboard,offKey } from '/keyboard.js';
+    createKeyboard($('.showArea'));
+    $("#input1").focus(function () {
+        offKey();
+        inputKey($('#input1'));
+    });
+    $("#input2").focus(function () {
+        offKey();
+        inputKey($('#input2'));
+    });
+    $("#input3").focus(function () {
+        offKey();
+        inputKey($('#input3'));
+    });
+</script>
+
+</html>
